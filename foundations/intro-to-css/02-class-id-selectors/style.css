@@ -1,1 +1,19 @@
-/* Add CSS Styling */
+p {
+    background-color: #ffb3b3;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+.odd:nth-of-type(2) {
+    font-size: 24px;
+}
+
+#two {
+    color: #0000ff;
+    font-size: 36px;
+}
+
+#four {
+    background-color: #33cc33;
+    font-size: 24px;
+    font-weight: bold;
+}
