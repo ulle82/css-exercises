@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 html, body {
-  height: 100%;
+  height: 100%; 
 }
 
 body {
@@ -67,3 +67,32 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+/* My solution */
+
+.modal {
+  display: flex;
+  padding: 16px;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-left: 16px;
+
+}
+
+.close-button {
+  margin-left: auto;
+}
+
+.header {
+  font-weight: bold;
+  
+}
+

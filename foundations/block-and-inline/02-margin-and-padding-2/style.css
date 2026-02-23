@@ -11,6 +11,9 @@ body {
 
 .title {
   background: #e3f4ff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
 }
 
 .content {
@@ -19,9 +22,24 @@ body {
 
 .button-container {
   background: #e3f4ff;
+  text-align: center;
+  margin-top: 10px;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  display: block;
+  padding: 10px 20px;
+  margin: auto;
+}
+
+div {
+  padding: 10px;
+}
+
+.title,
+.content,
+.button-container {
+  padding: 10px;
 }
