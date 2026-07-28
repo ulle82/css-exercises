@@ -6,13 +6,13 @@
 .container {
   text-align: center;
   display: grid;
+  gap: 4px;
   grid-template-columns: 1fr 4fr;
 }
 
 .container div {
   padding: 15px;
   font-size: 32px;
-  gap: 4px;
   font-family: Helvetica;
   font-weight: bold;
   color: white;
@@ -21,12 +21,15 @@
 .header {
   background-color: #393f4d;
   display: grid;
-  grid-column: 1/ -1;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
 }
 
 .menu ul,
 .menu li {
   font-size: 16px;
+
 }
 
 .sidebar {
@@ -93,4 +96,10 @@
 .footer p {
   font-size: 13px;
   font-weight: normal;
+}
+
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style-type: none;
 }
