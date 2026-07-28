@@ -5,11 +5,14 @@
 
 .container {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
 }
 
 .container div {
   padding: 15px;
   font-size: 32px;
+  gap: 4px;
   font-family: Helvetica;
   font-weight: bold;
   color: white;
@@ -17,6 +20,8 @@
 
 .header {
   background-color: #393f4d;
+  display: grid;
+  grid-column: 1/ -1;
 }
 
 .menu ul,
