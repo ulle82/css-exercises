@@ -5,9 +5,6 @@
 
 .container {
   text-align: center;
-  display: grid;
-  gap: 4px;
-  grid-template-columns: 1fr 4fr;
 }
 
 .container div {
@@ -20,16 +17,12 @@
 
 .header {
   background-color: #393f4d;
-  display: grid;
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: subgrid;
 }
 
-.menu ul,
-.menu li {
+.nav ul,
+.menu ul {
   font-size: 16px;
-
+  list-style-type: none;
 }
 
 .sidebar {
@@ -57,7 +50,6 @@
 }
 
 .nav ul li {
-  font-size: 16px;
   text-transform: uppercase;
 }
 
@@ -98,8 +90,63 @@
   font-weight: normal;
 }
 
+
+/* Solution below here */
+
+.container {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 1fr 4fr;
+}
+
+.header {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: subgrid;
+}
+
 .menu ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   list-style-type: none;
+}
+
+.footer {
+  grid-column: span 2;
+}
+
+.sidebar {
+  grid-row: span 2;
+  display: grid;
+  gap: 50px;
+}
+
+.nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  height: 200px;
+}
+
+.side-content, 
+.photo {
+  display: grid;
+  align-content: center;
+}
+
+.menu {
+  display: grid;
+  align-items: center;
+}
+
+.logo {
+  justify-self: start;
 }
